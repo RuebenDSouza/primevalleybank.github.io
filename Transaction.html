@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transaction</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body >
+    <div id="menu">
+        <a href="home.html"><img src="home.png" alt=""></a>
+        <a href="home.html"><img src="bnkservices.png" alt=""></a>
+        <a href="home.html"><img src="newsimg.png" alt=""></a>
+    </div>
+    <div id="details">
+        <img src="user.png" alt="">
+        <p style="font-size: 20px;font-weight: bold;">Rueben D Souza</p><br>
+        <p style="font-size: 15px;font-weight: bold;">Current Balance</p>
+        <input type="text"  id="cbnew" value="0" readonly style="color: white;" ><br>
+    </div>
+    <div id="incom">
+        <p style="font-size: 15px;">Income</p>
+       <input type="text"  id="income" value="0" readonly style="color: white;">
+       </div>
+       <div id="spend">
+        <p style="font-size: 15px;">Spending</p>
+        <input type="text"  id="spending" value="0" readonly style="color: white;">
+       </div>
+
+    <div id="transdiv">
+        <div id="curbaldiv">
+            <p id="currbalan">Current Balance</p>
+            <input type="text" id="cb" value="0" readonly><br><span id="err" style="color:red;font-weight: bold; font-size: 15px;"></span>
+        </div>
+        <div id="choice"> 
+            <select name="" id="drop" placeholder="">
+                <option value="">Select</option>
+                <option id="d" value="Deposit">Deposit</option>
+                <option id="w" value="Withdraw">Withdraw</option>
+               
+            </select>
+        </div>
+        <div id="amount">
+            <p style="padding-top: 10px;">Amount</p>
+            <input type="number" id="amt" placeholder="Enter the Amount">
+        </div>
+       <div id="descript">
+           <p style="padding-top: 10px;">Description</p>
+        <input type="text" id="desc" placeholder="Enter the Description">
+       </div>
+<div id="confreset">
+    <button id="confirm" onclick="onconfirm()">Confirm</button>
+    <button id="reset" onclick="reset()">Reset</button>
+</div>
+<div id="tables">
+    
+    <table border="1" id="table1">
+        <th colspan="2">Deposit Details</th>
+        <tr>
+           
+            <td>Amount</td>
+            <td>Description</td>
+        </tr>
+    
+    </table>
+ 
+    <table border="1" id="table2">
+        <th colspan="2">Withdrawal Details</th>
+        <tr>
+            <td>Amount</td>
+            <td>Description</td>
+        </tr>
+    
+    </table>
+
+</div>
+
+</div>
+</body>
+<script src="bank.js"></script>
+</html>

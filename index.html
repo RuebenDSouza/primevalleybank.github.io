@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="log"><img src="Logo.PNG" alt="" style="height: 100px;width: 350px;"></div>
+    <div id="signup">
+        
+    </div>
+    <div id="form" >
+        <h3 id="heading"><img src="signup.png" alt="" style="height: 50px;"> </h3>
+        <form onsubmit="return validate()" action="home.html">
+            <input id="fn" type="text" placeholder="First Name" ><br><span id="fnmsg" style="color: red; font-size: 12px;"></span><br>
+            <input type="text" placeholder="Last Name" ><br><br>
+            <input id="ph" type="text" placeholder="Phone Number" ><br><span id="phmsg" style="color: red;font-size: 12px;"></span><br>
+            <input id="dob" type="text" placeholder="Date of Birth" onfocus="(this.type='date')"><br><span id="dobmsg" style="color: red;font-size: 12px;"></span><br>
+            <input id="email" type="email" placeholder="E-mail ID" ><br><span id="mailmsg" style="color: red;font-size: 12px;"></span><br>
+            <input id="pwd" type="password" placeholder="Password" ><br><span id="pwdmsg" style="color: red;font-size: 12px;"></span><br>
+            <input id="cnpwd" type="password" placeholder="Confirm Password" ><br><span id="cnpwdmsg" style="color: red;font-size: 12px;"></span><br>
+            <input id="captcha" type="text" readonly >
+            <button id="refresh" onclick="captch()">Refresh</button><br><br>
+            <input id="cncaptcha" type="text" placeholder="Enter Captcha" ><br><span id="cncapmsg" style="color: red;font-size: 12px;"></span><br>
+            <input type="submit" id="button" value="Sign Up"  >
+    
+        </form>
+    </div>
+    <script src="bank.js"></script>
+</body>
+</html>

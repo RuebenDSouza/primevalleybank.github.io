@@ -1,0 +1,63 @@
+#modal{
+    background-color: rgba(0,0,0,0.6);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#modal-content{
+    background-color: white;
+    padding: 40px ;
+    border-radius: 4px;
+}
+#close{
+    height: 40px;
+   width: 40px;
+    position: absolute;
+    background:none;
+    border: none;
+    font-size: 35px;
+    justify-content: right;
+   margin-left: 160px;
+   margin-top: -30px;
+   transform: rotate(45deg);
+   height: 40px;
+   width: 40px;
+   outline: none;
+   cursor: pointer;
+  
+}
+#signimg{
+    width: 90px;
+    height: 90px;
+    align-items: center;
+    margin-left: 40px;
+}
+#modal-form input{
+    width: 180px;
+    background: none;
+    border-radius: 2px;
+}
+#button1{
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    height: 35px;
+    width: 70px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-family: 'Baloo 2', cursive;
+    cursor: pointer;
+}
+#button1:hover{
+    
+    color:white;
+    background-color: blue;
+}
+
